@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href={{url_for('static',filename="transla.css")}}>
+
+  </head>
+
+
+<body style="background-color:#96ffff; ">
+<h1>Translation + Summarization</h1>
+<h2 style="color: #16A085;">Select a language to translate text. </h2>
+
+
+<form class="anmol" method="post" enctype=multipart/form-data>
+
+<input type="radio" name="options" id="option1" value="Marathi" > Marathi </input>
+
+<input type="radio" name="options" id="option2" value="Hindi"> Hindi </input>
+
+<input type="radio" name="options" id="option3" value="English"> English </input>
+
+<br>
+    <br>
+    <br>
+    <input class="hari" type="file" name="file"/>
+    <input class="hari" type="submit" />
+</form>
+
+
+<p class="priya">
+  {{message}}
+</p>
+
+<textarea class="box" style="font-size: 25px">
+    {{text}}
+</textarea>
+
+</body>
+</html>

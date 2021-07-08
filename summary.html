@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href={{url_for('static',filename="summ.css")}}>
+
+  </head>
+
+
+<body style="background-color: #96ffff;">
+<br>
+<h1>Select file for Summarization</h1>
+
+<form class="anmol" method="post" enctype=multipart/form-data>
+
+    <input class="hari" type="file" name="file"/>
+    <input class="hari" type="submit" />
+</form>
+
+
+<p class="priya">
+  {{message}}
+</p>
+
+<textarea class="box" style="font-size: 25px">
+    {{text}}
+</textarea>
+
+</body>
+</html>

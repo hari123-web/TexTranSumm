@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href={{url_for('static',filename="home.css")}}>
+  </head>
+
+  <body style="background-color:#dfdce3; ">
+<div class="header">
+<img src="{{user_image}}" width="900px" height="300px">
+</div>
+
+
+<div class="container">
+  <button class="btn btn1" onclick="myFunction1()"><b>Translator</button>
+  <button class="btn btn2" onclick="myFunction2()"><b>Summarizer</button>
+  <button class="btn btn3" onclick="myFunction3()"><b>Translator + Summarizer</button>
+  <button class="btn btn4" onclick="myFunction4()"><b>About Us</button>
+  
+</div>
+  </body>
+
+
+<script>
+function myFunction1() {
+
+  var r = confirm("Translate your text in various languages.");
+  if (r == true) {
+    window.location.href = "/txtTranslation";
+  } 
+ }
+function myFunction2() {
+
+  var r = confirm("Summarize your paragraph here into short and meaningful text.");
+  if (r == true) {
+    window.location.href = "/summary";
+  } 
+ }
+function myFunction3() {
+
+  var r = confirm("Summary of given text is created then translate into required language.");
+  if (r == true) {
+    window.location.href = "/transSummay";
+  } 
+ }
+
+function myFunction4() {
+   window.location.href = "/about";
+}
+
+
+</script>
+
+
+</html>
+
+
